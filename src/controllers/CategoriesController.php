@@ -42,11 +42,11 @@ class CategoriesController extends Controller
     // =========================================================================
 
     /**
-     * @var    bool|array Allows anonymous access to this controller's actions.
+     * @var    bool|int|array Allows anonymous access to this controller's actions.
      *         The actions must be in 'kebab-case'
      * @access protected
      */
-    protected $allowAnonymous = ['index'];
+    protected array|bool|int $allowAnonymous = ['index'];
 
     // Public Methods
     // =========================================================================
